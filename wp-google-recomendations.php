@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Google Recommendations
 Description: Exibe recomendações do Google com opções de configuração de estrelas, rolagem e integração com Elementor.
-Version: 1.0.50
+Version: 1.0.51
 Author: Carlos Delfino <consultoria@carlosdelfino.eti.br>
 Requires at least: 5.8
 Tested up to: 6.5

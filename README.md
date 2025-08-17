@@ -1,21 +1,14 @@
-## Atualizações e Releases (1.0.50)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=rapporttecnologia.wp-google-recomendations)
 
-- O plugin verifica novas versões via GitHub Releases e exibe aviso no admin quando houver update.
-- Você pode ativar/desativar atualização automática na lista de plugins (link de ação).
-- Releases são publicados automaticamente ao criar tags `v*` no repositório.
-
-## Notas rápidas
-
-- Configure a chave da API do Google, Projeto e Location na página `Google Recomendações` (menu do admin).
-- Selecione o `Place ID` com o campo de busca e mapa integrados.
 # WP Google Recommendations
 
 Este plugin exibe recomendações do Google na sua página WordPress, com opções de configuração de estrelas, rolagem e integração com Elementor.
 
 ## Instalação
 
-1. Faça upload do plugin para a pasta `wp-content/plugins` do seu WordPress.
-2. Ative o plugin pelo painel de administração do WordPress.
+1. Baixe o arquivo ZIP do release mais recente na aba Releases do GitHub.
+2. No painel do WordPress, acesse: Plugins → Adicionar novo → Enviar plugin.
+3. Envie o ZIP, instale e ative.
 
 ## Configuração da API do Google Recommendations
 
@@ -61,4 +54,29 @@ Você pode exibir as recomendações em qualquer lugar usando o shortcode:
 
 ## Suporte
 
-Para dúvidas ou problemas, abra uma issue ou entre em contato com o desenvolvedor.
+- Abra uma issue: https://github.com/RapportTecnologia/wp-google-recomendations/issues
+- Descreva claramente o problema, passos para reproduzir e inclua logs/prints quando possível.
+
+## Sugerir melhorias
+
+- Sugestões via issues: https://github.com/RapportTecnologia/wp-google-recomendations/issues
+- Marque como “enhancement” e explique o caso de uso.
+
+## Contribua (PIX)
+
+Se este plugin ajuda você, considere um PIX de R$ 10 para apoiar a manutenção e o tempo dedicado:
+
+Chave PIX: inter@carlosdelfino.eti.br
+
+Muito obrigado pelo apoio!
+
+## Atualizações e Releases (1.0.51)
+
+- Metadados de autor e requisitos mínimos atualizados no cabeçalho do plugin.
+- Rodapé administrativo com links para repositório e site.
+- Documentação (este README) atualizada com instalação, suporte, melhorias e PIX.
+
+## Notas rápidas
+
+- Configure a chave da API do Google, Projeto e Location na página `Google Recomendações` (menu do admin).
+- Selecione o `Place ID` com o campo de busca e mapa integrados.

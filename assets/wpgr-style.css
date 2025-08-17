@@ -1,0 +1,20 @@
+.wpgr-recommendations.wpgr-horizontal {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+}
+.wpgr-recommendations.wpgr-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.wpgr-rec-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    min-width: 200px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}

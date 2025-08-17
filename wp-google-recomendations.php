@@ -4,6 +4,9 @@ Plugin Name: WP Google Recommendations
 Description: Exibe recomendações do Google com opções de configuração de estrelas, rolagem e integração com Elementor.
 Version: 1.0.50
 Author: Carlos Delfino <consultoria@carlosdelfino.eti.br>
+Requires at least: 5.8
+Tested up to: 6.5
+Requires PHP: 7.4
 
 */
 
@@ -168,3 +171,19 @@ function wpgr_deactivate() {
     // Código de desativação se necessário
 }
 register_deactivation_hook(__FILE__, 'wpgr_deactivate');
+
+// ---- Admin footer (links) ----
+function wpgr_admin_footer_links() {
+    if (!is_admin()) { return; }
+    $page = isset($_GET['page']) ? sanitize_key($_GET['page']) : '';
+    if ($page !== 'wpgr-admin') { return; }
+    $owner = defined('WPGR_GH_OWNER') ? WPGR_GH_OWNER : 'RapportTecnologia';
+    $repo  = defined('WPGR_GH_REPO')  ? WPGR_GH_REPO  : 'wp-google-recomendations';
+    $repo_url = sprintf('https://github.com/%s/%s', $owner, $repo);
+    $web_url  = sprintf('https://rapport.tec.br/%s', $repo);
+    echo '<div style="margin-top:16px;opacity:.8"><small>'
+        . 'Repositório: <a href="' . esc_url($repo_url) . '" target="_blank" rel="noopener">' . esc_html($repo_url) . '</a>'
+        . ' — Página: <a href="' . esc_url($web_url) . '" target="_blank" rel="noopener">' . esc_html($web_url) . '</a>'
+        . '</small></div>';
+}
+add_action('admin_footer', 'wpgr_admin_footer_links');

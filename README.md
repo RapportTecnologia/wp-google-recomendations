@@ -1,3 +1,13 @@
+## Atualizações e Releases (1.0.50)
+
+- O plugin verifica novas versões via GitHub Releases e exibe aviso no admin quando houver update.
+- Você pode ativar/desativar atualização automática na lista de plugins (link de ação).
+- Releases são publicados automaticamente ao criar tags `v*` no repositório.
+
+## Notas rápidas
+
+- Configure a chave da API do Google, Projeto e Location na página `Google Recomendações` (menu do admin).
+- Selecione o `Place ID` com o campo de busca e mapa integrados.
 # WP Google Recommendations
 
 Este plugin exibe recomendações do Google na sua página WordPress, com opções de configuração de estrelas, rolagem e integração com Elementor.
@@ -32,6 +42,14 @@ No painel de administração do plugin, preencha os seguintes campos:
 ## Uso com Elementor
 
 O plugin adiciona um widget chamado "Google Recomendações" à lista de widgets do Elementor. Basta arrastar o widget para sua página e configurar as opções desejadas.
+
+## Uso
+
+Para usar o plugin, você pode seguir os passos abaixo:
+
+1. Configure a chave da API do Google e o Place ID no painel de administração.
+2. Adicione o widget "Google Recomendações" à sua página com Elementor.
+3. Configure as opções de exibição das recomendações.
 
 ## Shortcode
 
